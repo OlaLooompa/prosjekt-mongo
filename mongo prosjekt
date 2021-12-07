@@ -1,0 +1,9 @@
+# https://www.youtube.com/watch?v=Jua-KWBdzfU
+import random
+
+def rolldice(min, max): 
+  print("Kaster terning...")
+  number = random.randint(min, max)
+  print("Tallet ditt : {number}")
+rolldice(1, 6)
+  
