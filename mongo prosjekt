@@ -4,6 +4,6 @@ import random
 def rolldice(min, max): 
   print("Kaster terning...")
   number = random.randint(min, max)
-  print("Tallet ditt : {number}")
+  print(f"Tallet ditt : {number}")
 rolldice(1, 6)
   
