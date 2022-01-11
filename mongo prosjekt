@@ -2,11 +2,15 @@
 import random
 
 
+valg = "y"
 def rolldice(min, max): 
   print("Kaster terning...")
   number = random.randint(min, max)
   print(f"Tallet ditt : {number}")
-rolldice(1, 6)
-choice = input("Vil du rulle terningen igjen? (y/n)" )
-if choice.lower() == 'n':
-    break   
+  
+while valg == "y":
+    rolldice(1, 6)
+    valg = input("Vil du rulle terningen igjen? (y/n)" )
+    if valg.lower() == 'n':
+        print("Dårlig valg")
+        break    
