@@ -1,9 +1,12 @@
 # https://www.youtube.com/watch?v=Jua-KWBdzfU
 import random
 
+
 def rolldice(min, max): 
   print("Kaster terning...")
   number = random.randint(min, max)
   print(f"Tallet ditt : {number}")
 rolldice(1, 6)
-  
+choice = input("Vil du rulle terningen igjen? (y/n)" )
+if choice.lower() == 'n':
+    break   
