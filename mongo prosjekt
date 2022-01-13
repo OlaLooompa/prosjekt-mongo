@@ -8,9 +8,21 @@ def rolldice(min, max):
   number = random.randint(min, max)
   print(f"Tallet ditt : {number}")
   
+# Def funksjonen bruker vi til å deifinere en funksjon og dens egenskaper, denne funksjonen er rolldice(min, max), vi bruker kolonen til å markere slutten på funksjonsoverskriften
+# Videre printer vi Kaster terning... som vil dukke opp først etter du kjører programmet etter
+# Under print funksjonen har vi number = random.randint(min, max). Randint er en del av random modulen vi importerte i starten av programmet og er det som skal få terningen til å ha tilfeldigheten ved seg
+# Her sier vi at tallet som terningen genererer skal ligge imellom et av tallene vi velger i koden under
+# Til slutt sier vi at den skal skrive ut tallet man får
+
 while valg == "y":
     rolldice(1, 6)
     valg = input("Vil du rulle terningen igjen? (y/n)" )
     if valg.lower() == 'n':
-        print("Dårlig valg")
+        print("Du burde trykket y, ha det bra")
         break    
+
+# Her starter vi ved å si at så lenge valget er y, eller ja som det betyr vil den fortsette med koden under
+# Etterpå legger vi inn rolldice funksjonen som vi satt opp tidligere og legger inn det vi vil ha som det minste tallet, og det største tallet som på en vanlig terning er 1 og 6, dette bestemmer at det høyeste tallet den kan generere er 6 og det minste er 1, og så klart alt imellom
+# Når terningen har blitt rullet en gang gir man brukeren muligheten til å velge om de vil rulle terningen igjen, da bruker vi input funksjonen til å la brukeren legge inn valget sitt
+# Det er her while funksjonen kommer inn, den sørger for at når valget er y, altså ja vil koden kjøre på nytt
+# For at vi skal få n, eller nei til å stoppe progremmet så legger vi til en if funksjon som sier at hvis valget er n så skal den printe det vi vil at den skal si, for eksempel hade og legger til break funksjonen som kort fortalt stopper programmet
